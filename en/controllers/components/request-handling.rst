@@ -128,7 +128,7 @@ However, you want to allow caching for non-AJAX requests. The
 following would accomplish that::
 
         if ($this->request->is('ajax')) {
-            $this->response->disableCache();
+            $this->response->withDisabledCache();
         }
         // Continue Controller action
 
