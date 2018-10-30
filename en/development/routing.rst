@@ -1116,7 +1116,7 @@ routes. For example, if your ``edit()`` action is called ``put()`` you can
 use the ``actions`` key to rename the actions used::
 
     $routes->resources('Articles', [
-        'actions' => ['update' => 'put', 'create' => 'add']
+        'actions' => ['edit' => 'put', 'create' => 'add']
     ]);
 
 The above would use ``put()`` for the ``edit()`` action, and ``add()``
